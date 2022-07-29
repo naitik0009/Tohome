@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="saiman">
+    <title>To Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="icon" type="image/x-icon" href="images/icon.png" sizes="40x40">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=The+Nautigal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css" type="text/css">
+    <script src="https://kit.fontawesome.com/83266ccef2.js" crossorigin="anonymous"></script>
+</head>
+<body onload="slider()"> 
+    <div class="container">
+
+        <div style="width:100%;">
+            <section class="header">
+                <nav>
+                    <a href="index.html"><img src="images/logo.png"  alt="To Home"></a>
+                    <div id="top">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="feature.html">Resturants</a></li> 
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="ourteam.html">Our Team</a></li>
+                        </ul>
+                    </div>
+                    <a href="login.html" class="login" target="_blank"><button>Login</button></a>
+                </nav>
+            </section>
+        </div>
+        <div>
+            <div class="banner">
+                <div class="slider">
+                    <img src="images/banner2.jpeg" alt="los" id="sliderimg">
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="content">
+            <h2>We severe faster</h2>
+            <h3>and better.</h2>
+            <form action="#">
+                <input type="text" placeholder="Serach resturant, Food iteams">
+                <button type="sumbit">Serach</button>
+            </form>
+        </div>
+        <div class="banner">
+            <img src="images/appstore.jpg" class="downloadimage"alt="app store download">
+        </div>
+        <div class="featured"></div>
+        <div class="featured-resturant">
+            <h3>Featured Resturants</h3>
+            <div class="ourteam1">
+                <div class="subcontainer1">
+                    <div class="tcontent1">
+                        <img src="images/browserimg1.png" alt="">
+                        <p>Bajeko sekuwa is a premium nepali restaurant that has been serving its customers authentic nepali cuisines like sekuwa, tash, Nepali Khana Set</p>
+                    </div>
+        
+                    <div class="tcontent1">
+                        <img src="images/browserimg14.jpeg" alt="">
+                        <p>KKFC  sekuwa is a premium nepali restaurant that has been serving its customers authentic nepali cuisines like sekuwa, tash, Nepali Khana Set</p>
+                    </div>
+        
+                    <div class="tcontent1">
+                        <img src="images/browserimg2.png" alt="">
+                        <p>Chicken Tandoori is a premium nepali restaurant that has been serving its customers authentic nepali cuisines like sekuwa, tash, Nepali Khana Set</p>
+                    </div>
+                </div>
+                
+
+            </div>
+            
+        </div>
+
+
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <h3>Quciks Links <div class="underlin"><span></span></div></h3>
+                    <div class="flink">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="feature.html">Feature resturants</a></li> 
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.hmtl">About</a></li>
+                            <li><a href="ourteam">Our Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>GET HELP <div class="underlin"><span></span></div></h3>
+                    <p>HOW TO ORDER?</p>
+                    <p>FAQS</p>
+                    <p>SUPPORT SERVICES</p>
+                </div>
+                <div class="col">
+                    <h3>CONTACT US <div class="underlin"><span></span></div></h3>
+                    <p>Katmandu, Nepal</p>
+                    <p>Pokhara, Nepal</p>
+                    <p>+977-9877665544, +977-9877665544</p> 
+                    <p><i class="fa-solid fa-envelope"></i> shresthasaimon9@gmail.com</p>
+                </div>
+                <div class="col">
+                    <h3>SERVICE HOUR <div class="underlin"><span></span></div></h3>
+                    <p id="time">08:00 AM to 9:00 PM (NST)</p>
+                    <div class="socialiocn">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p id="copyright">Copyright &copy; saimanshrestha.com 2022 - All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script>
+        var sliderimg = document.getElementById("sliderimg")
+
+        var images = new Array("images/banner2.jpeg", "images/banner5.jpeg", "images/banner9.jpg", "images/banner8.jpg" );
+
+        var len = images.length;
+        var i = 0;
+
+        function slider(){
+            if(i > len-1){
+                i = 0;
+            }
+
+            sliderimg.src = images[i];
+            i++;
+            setTimeout('slider()',3000);
+        }
+    </script>
+
+   
+</body>
+</html>
